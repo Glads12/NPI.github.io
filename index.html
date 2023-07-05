@@ -1,141 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Site</title>
-    <meta
-      name="description"
-      content="software developer, fullstack developer"
-    />
 
-    <!-- Bootstrap core CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Site</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
-    <!-- FontAwesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
+    header {
+      background-color: #24282c;
+      padding: 20px;
+      color: white;
+    }
 
-    <link href="./css/style.css" rel="stylesheet" />
-     <!-- Custom Javascript -->
-     <script defer src="js/portfolio.js"></script>
-  </head>
+    nav {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
 
-  <body class="bg-light" id="top">
-    <div class="container-fluid">
-      <p id="topSection"></p>
-      <div class="row">
-        <div class="col-md-4 col-lg-4 col-xl-2 bg-secondary p-4" id="sidebar">
-          <div class="text-center">
-            <img
-              class="rounded-circle img-fluid border border-dark"
-              src="./img/user.jpeg"
-              alt="user"
-              width="180"
-              height="180"
-            />
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+    }
 
-            <h1 class="h3 pt-3">Frank Lubisi Founder</h1>
-			<h1 class="h3 pt-3">Gladys Mkhatshwa COO</h1>
-			<h1 class="h3 pt-3">Tholakele Mkhatshwa Skills Development Agency</h1>
-            <p class="text-light">
-              
-            </p>
+    nav a:hover {
+      background-color: #ffc107;
+    }
 
-            <div class="collapse d-sm-block" id="social">
-              <ul class="nav justify-content-center">
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    href="#"
-                    target="_blank"
-                    ><i class="fab fa-linkedin" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    href="#"
-                    target="_blank"
-                    ><i class="fab fa-github" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    href="#"
-                    target="_blank"
-                    ><i class="fab fa-angellist" aria-hidden="true"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <p class="mt-2">Email: <br />franklubisi9@gmail.com</p>
-            <p class="mt-2">
-              Phone: <br />
-              +27 67 354 6635
-            </p>
-          </div>
-          <!-- /.text-md-center -->
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #24282c;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Prospective Services Rendered</a>
+      <a href="#">Company Description</a>
+      <a href="#">Schools (First Phase)</a>
+      <a href="#">Targeted (Potential) Institutions</a>
+      <a href="#">Future of the Company</a>
+      <a href="#">Contact Info</a>
+      <a href="#">Inspiration</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Nkomazi Prominent Innovators</h1>
+
+    <section id="history">
+      <div class="employment">
+        <div class="employment-body">
+          <img src="./img/user.jpeg" alt="user" width="180" height="180" />
+          <h2>Empowering youth through innovation</h2>
+          <br>
+          <p>
+            Nkomazi Prominent Innovators (NPI) Project is a non-profit service delivery initiative established in 2023,
+            located in Mangweni (temporary), with the aim of aiding high school learners, institutions (hospitals and
+            clinics), traditional authorities (libraries, community halls, youth centers and charity centers), local
+            government, and community at large with different skills and services. Computer laboratories, infrastructure
+            development, career guidance, the fourth industrial revolution, entrepreneurship, etc. are the services of
+            paramount importance to be rendered by the company to help alleviate unemployment levels and combat crime.
+          </p>
+
+          <p>
+            There is a real need for our community located in remote areas to be exposed to digital skills.
+          </p>
         </div>
-        <!-- /.col -->
+      </div>
+    </section>
+  </div>
 
-        <!--
-        #########################
-        Main Column
-        #########################
-        -->
+  <footer>
+    <p>&copy; 2023 Nkomazi Prominent Innovators. All rights reserved.</p>
+  </footer>
+</body>
 
-        <div class="col-md-6 m-md-auto p-4" id="main">
-          <section id="history">
-            <div class="employment">
-              <div class="employment-header">
-                
-                <p>
-                  <h1>Nkomazi Prominent Innovators</h1> <br />
-                  
-                </p>
-              </div>
-              <div class="employment-body">
-
-                <h2>Empowering youth through innovation</h2>
-                <br>
-               <!-- <p>
-                  <a
-                    href="#"
-                    target="_blank"
-                    >Download My Resume</a
-                  >
-                </p>-->
-                <p>
-                  Nkomazi Prominent Innovators (NPI) Project
-
-Is a non-profit service delivery initiative established in 2023, located in Mangweni (temporary), with the aim of aiding high school learners, institutions (hospitals and clinics), traditional authorities (libraries, community halls, youth centers and charity centers), local government, and community at large with different skills and services. Computer laboratories, infrastructure development, career guidance, the fourth industrial revolution, entrepreneurship etc. Are the services with paramount importance to be rendered by the company to help alleviate unemployment level and combat crime.
-                </p>
-
-                <p>
-                  There is a real need for our community located remote areas to be exposed to digital skills.
-    
-                </p>
-
-                <p></p>
-              </div>
-            </div>
-          </section>
-         
-
-          
-               
-             
-             
-  </body>
 </html>
